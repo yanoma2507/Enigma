@@ -223,10 +223,39 @@
                 } else {
                     document.getElementById('final').style.display = 'block';
                 }
+                // Salva o progresso após cada enigma resolvido
+                localStorage.setItem('lastEnigma', enigmaNumber);
             } else {
                 alert('A Ordem rejeita sua resposta. Tente novamente.');
             }
         }
+
+        // Carrega o progresso ao iniciar o jogo
+        window.onload = function() {
+            var lastEnigma = localStorage.getItem('lastEnigma');
+            if (lastEnigma && lastEnigma > 1 && lastEnigma < 30) {
+                for (var i = 1; i <= lastEnigma; i++) {
+                    document.getElementById('enigma' + i).style.display = 'none';
+                }
+                document.getElementById('enigma' + (parseInt(lastEnigma) + 1)).style.display = 'block';
+            }
+        };
+
+        // Salva o progresso ao sair da página
+        window.onbeforeunload = function() {
+            var currentEnigma = 1;
+            for (var i = 1; i <= 30; i++) {
+                if (document.getElementById('enigma' + i).style.display !== 'none') {
+                    currentEnigma = i;
+                    break;
+                }
+            }
+            if (currentEnigma > 1) {
+                localStorage.setItem('lastEnigma', currentEnigma - 1);
+            } else {
+                localStorage.removeItem('lastEnigma');
+            }
+        };
     </script>
 </body>
-  </html>
+</html>
