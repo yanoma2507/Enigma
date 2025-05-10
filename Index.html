@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os Julgamentos da Ordem dos Iluminados</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 30px;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+        .enigma {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 2px solid #444;
+            background-color: #2a2a2a;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        h1 {
+            font-size: 2em;
+            color: #d4a017;
+            text-align: center;
+            text-shadow: 0 0 5px rgba(212, 160, 23, 0.5);
+        }
+        h2 {
+            color: #d4a017;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        input {
+            padding: 8px;
+            margin-right: 15px;
+            border: 1px solid #666;
+            background-color: #333;
+            color: #fff;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        button {
+            padding: 8px 20px;
+            background-color: #d4a017;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #b58900;
+        }
+        #introduction, #story, #final {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="introduction">
+        <h1>Os Julgamentos da Ordem dos Iluminados</h1>
+        <p>Você foi escolhido entre poucos para provar sua mente e espírito. A Ordem dos Iluminados, guardiã de segredos antigos, oferece 30 desafios. Resolva-os e revele o que está além do véu. O primeiro teste espera por você.</p>
+    </div>
+
+    <!-- Enigma 1 -->
+    <div id="enigma1" class="enigma">
+        <h2>Teste 1: O Chamado</h2>
+        <p>Uma voz sussurra através do éter. deslocamento -3: "Khoor, fdqglgdwr, d suryd frphfrx, gljlwh rod."</p>
+        <input type="text" id="input1">
+        <button onclick="checkAnswer(1)">Decifrar</button>
+    </div>
+
+    <!-- Enigma 2 -->
+    <div id="enigma2" class="enigma hidden">
+        <h2>Teste 2: O Guardião Silencioso</h2>
+        <p>Ele vigia sem olhos, fala sem voz, e carrega segredos em suas curvas. O que é?</p>
+        <input type="text" id="input2">
+        <button onclick="checkAnswer(2)">Responder</button>
+    </div>
+
+    <!-- Enigma 3 -->
+    <div id="enigma3" class="enigma hidden">
+        <h2>Teste 3: O Padrão Velado</h2>
+        <p>Os números dançam: 3, 6, 12, 24. Qual é o próximo?</p>
+        <input type="text" id="input3">
+        <button onclick="checkAnswer(3)">Continuar</button>
+    </div>
+
+    <!-- Enigma 4 -->
+    <div id="enigma4" class="enigma hidden">
+        <h2>Teste 4: O Espelho Quebrado</h2>
+        <p>Duas faces, quase iguais:<br>Primeira: "NOITECLARAESTRELADA"<br>Segunda: "NOITECLARAVSTRFLADA"<br>O que escondem?</p>
+        <input type="text" id="input4">
+        <button onclick="checkAnswer(4)">Revelar</button>
+    </div>
+
+    <!-- Enigma 5 -->
+    <div id="enigma5" class="enigma hidden">
+        <h2>Teste 5: O Som do Passado</h2>
+        <p>Ouça o eco: ... .- / .-.. .-.. / ..- -- .. -. .- -.. ---</p>
+        <input type="text" id="input5">
+        <button onclick="checkAnswer(5)">Interpretar</button>
+    </div>
+
+    <!-- Enigma 6 -->
+    <div id="enigma6" class="enigma hidden">
+        <h2>Teste 6: A Chave Binária</h2>
+        <p>Os zeros e uns revelam: 01010011 01100101 01100111 01110010 01100101 01100100 01101111</p>
+        <input type="text" id="input6">
+        <button onclick="checkAnswer(6)">Decodificar</button>
+    </div>
+
+    <!-- Enigma 7 -->
+    <div id="enigma7" class="enigma hidden">
+        <h2>Teste 7: A Verdade Torcida</h2>
+        <p>"as respostas passadas sabem a verdadeira resposta" digite sua resposta, ou suas antigas respostas..</p>
+        <input type="text" id="input7">
+        <button onclick="checkAnswer(7)">Corrigir</button>
+    </div>
+
+    <!-- Enigma 8 -->
+    <div id="enigma8" class="enigma hidden">
+        <h2>Teste 8: O Ciclo Vivo</h2>
+        <p>Sou o que sou porque meus pedaços se somam em poder. Teste-me: meus 3 dígitos, cada um elevado ao cubo, e eu renasço. Quem sou eu?</p>
+        <input type="text" id="input8">
+        <button onclick="checkAnswer(8)">Resolver</button>
+    </div>
+
+    <!-- Enigma 9 -->
+    <div id="enigma9" class="enigma hidden">
+        <h2>Teste 9: O Tecido do Cosmos</h2>
+        <p>Procure o valor que os sábios buscaram por eras. Começa com 3, seguido de um ponto, e seus primeiros cinco passos são 14159. O que é?</p>
+        <input type="text" id="input9">
+        <button onclick="checkAnswer(9)">Nomear</button>
+    </div>
+
+    <!-- Enigma 10 -->
+    <div id="enigma10" class="enigma hidden">
+        <h2>Teste 10: O Portal Duplo</h2>
+        <p>Duas portas, dois guardiões. Um mente, outro fala a verdade. Pergunte a um: "O outro diria que sua porta leva à morte?" O que ele responde se você está diante da porta da salvação?
+        (guardião que fala a verdade possui a porta da passagem, ja o guardião que fala mentira possui a porta da morte.)</p>
+        <input type="text" id="input10">
+        <button onclick="checkAnswer(10)">Escolher</button>
+    </div>
+
+    <!-- Enigmas 11 a 30 como exemplos criativos -->
+    <div id="enigma11" class="enigma hidden"><h2>Teste 11</h2><p>Um rei, uma rainha e um cavaleiro estão em 64 casas. Onde estou?</p><input type="text" id="input11"><button onclick="checkAnswer(11)">Resolver</button></div>
+    <div id="enigma12" class="enigma hidden"><h2>Teste 12</h2><p>O que pesa nada, mas enche tudo?</p><input type="text" id="input12"><button onclick="checkAnswer(12)">Responder</button></div>
+    <div id="enigma13" class="enigma hidden"><h2>Teste 13</h2><p>0100 0011 0110 1111 0110 1101 0110 0101 é o convite. Aceite.</p><input type="text" id="input13"><button onclick="checkAnswer(13)">Entrar</button></div>
+    <div id="enigma14" class="enigma hidden"><h2>Teste 14</h2><p>13, 17, 19, 23... O próximo me define. A sequência é o filho do irmão do filho do meu vô.</p><input type="text" id="input14"><button onclick="checkAnswer(14)">Avançar</button></div>
+    <div id="enigma15" class="enigma hidden"><h2>Teste 15</h2><p>A soma dos meus divisores sou eu. Sou um numero: </p><input type="text" id="input15"><button onclick="checkAnswer(15)">Identificar</button></div>
+    <div id="enigma16" class="enigma hidden"><h2>Teste 16</h2><p>Primeiro homem a tocar as estrelas sem asas.</p><input type="text" id="input16"><button onclick="checkAnswer(16)">Nomear</button></div>
+    <div id="enigma17" class="enigma hidden"><h2>Teste 17</h2><p>4 8 15 16 23 42 - o que une?</p><input type="text" id="input17"><button onclick="checkAnswer(17)">Conectar</button></div>
+    <div id="enigma18" class="enigma hidden"><h2>Teste 18</h2><p>O pintor do sorriso eterno.</p><input type="text" id="input18"><button onclick="checkAnswer(18)">Revelar</button></div>
+    <div id="enigma19" class="enigma hidden"><h2>Teste 19</h2><p>Um ciclo de 12, mas o 13º sou eu.</p><input type="text" id="input19"><button onclick="checkAnswer(19)">Completar</button></div>
+    <div id="enigma20" class="enigma hidden"><h2>Teste 20</h2><p>O que é 2 elevado ao que 3 elevado a 2 é?</p><input type="text" id="input20"><button onclick="checkAnswer(20)">Calcular</button></div>
+    <div id="enigma21" class="enigma hidden"><h2>Teste 21</h2><p>Onde o sol nasce duas vezes.</p><input type="text" id="input21"><button onclick="checkAnswer(21)">Localizar</button></div>
+    <div id="enigma22" class="enigma hidden"><h2>Teste 22</h2><p>Minha sombra tem 6 lados, mas eu sou redondo.</p><input type="text" id="input22"><button onclick="checkAnswer(22)">Definir</button></div>
+    <div id="enigma23" class="enigma hidden"><h2>Teste 23</h2><p>9 letras, 1 significado: verdade.</p><input type="text" id="input23"><button onclick="checkAnswer(23)">Escrever</button></div>
+    <div id="enigma24" class="enigma hidden"><h2>Teste 24</h2><p>O que fui, serei; o que sou, não serei.</p><input type="text" id="input24"><button onclick="checkAnswer(24)">Compreender</button></div>
+    <div id="enigma25" class="enigma hidden"><h2>Teste 25</h2><p>79 é meu número, brilho é meu nome.</p><input type="text" id="input25"><button onclick="checkAnswer(25)">Brilhar</button></div>
+    <div id="enigma26" class="enigma hidden"><h2>Teste 26</h2><p>enigma: "Sou leve como uma pena, mas nem o homem mais forte pode me segurar por muito tempo. O que sou?"</p><input type="text" id="input26"><button onclick="checkAnswer(26)">Terminar</button></div>
+    <div id="enigma27" class="enigma hidden"><h2>Teste 27</h2><p>Um triângulo onde 3, 4, 5 se encontram.</p><input type="text" id="input27"><button onclick="checkAnswer(27)">Medir</button></div>
+    <div id="enigma28" class="enigma hidden"><h2>Teste 28</h2><p>O som que não ouço, mas sinto.</p><input type="text" id="input28"><button onclick="checkAnswer(28)">Perceber</button></div>
+    <div id="enigma29" class="enigma hidden"><h2>Teste 29</h2><p>O que é metade de infinito?</p><input type="text" id="input29"><button onclick="checkAnswer(29)">Pensar</button></div>
+    <div id="enigma30" class="enigma hidden"><h2>Teste 30: O Véu Final</h2><p>Essa cifra me parece uma comida suína apetitosa!
+    AABBA BABAA AAAAA BAAAB AAABB ABAAA AAAAA ABBBA</p><input type="text" id="input30"><button onclick="checkAnswer(30)">Ascender</button></div>
+
+    <!-- Mensagem Final -->
+    <div id="final" class="hidden">
+        <h1>Iluminação Conquistada</h1>
+        <p>Os 30 véus foram levantados. Você é agora um com a Ordem dos Iluminados. Os segredos do cosmos são seus. Aguarde o próximo chamado.</p>
+    </div>
+
+    <script>
+        var answers = [
+            btoa('ola'),        // Enigma 1: "Olá, candidato, a prova começou."
+            btoa('espiral'),    // Enigma 2: Guardião silencioso com curvas
+            btoa('48'),         // Enigma 3: 3, 6, 12, 24 -> dobra
+            btoa('estrelada'),  // Enigma 4: Diferença entre as strings
+            btoa('illuminado'), // Enigma 5: Código Morse
+            btoa('segredo'),    // Enigma 6: Binário para "segredo"
+            btoa('os4eis'),       // Enigma 7: Palavra fora de lugar
+            btoa('153'),        // Enigma 8: 1³ + 5³ + 3³
+            btoa('pi'),         // Enigma 9: 3.14159
+            btoa('sim'),        // Enigma 10: Resposta do guardião
+            btoa('xadrez'),     // Enigma 11: Rei, rainha, cavaleiro
+            btoa('ar'),        // Enigma 12: Pesa nada, enche tudo
+            btoa('come'),       // Enigma 13: Binário para "come"
+            btoa('29'),         // Enigma 14: Números primos
+            btoa('perfeito'),         // Enigma 15: Número perfeito
+            btoa('yuri gagarin'),    // Enigma 16: Yuri Gagarin
+            btoa('lost'),       // Enigma 17: Sequência de Lost
+            btoa('leonardo da vinci'),   // Enigma 18: Leonardo da Vinci
+            btoa('bode'),       // Enigma 19: 13º signo chinês?
+            btoa('512'),        // Enigma 20: 2^(3^2)
+            btoa('noruega'),    // Enigma 21: Sol da meia-noite
+            btoa('cilindro'),   // Enigma 22: Sombra hexagonal
+            btoa('realidade'), // Enigma 23: 9 letras
+            btoa('tempo'),      // Enigma 24: Ciclo de ser
+            btoa('ouro'),       // Enigma 25: Número atômico 79
+            btoa('respiração'),  // Enigma 26: Frase completa
+            btoa('pitagoras'),  // Enigma 27: Triângulo 3-4-5
+            btoa('silencio'),   // Enigma 28: Sentido, não ouvido
+            btoa('infinito'),   // Enigma 29: Metade de infinito
+            btoa('guardiao'),     // Enigma 30: Tudo começou aqui
+        ];
+
+        function checkAnswer(enigmaNumber) {
+            var input = document.getElementById('input' + enigmaNumber).value.toLowerCase();
+            if (btoa(input) === answers[enigmaNumber - 1]) {
+                document.getElementById('enigma' + enigmaNumber).style.display = 'none';
+                if (enigmaNumber < 30) {
+                    document.getElementById('enigma' + (enigmaNumber + 1)).style.display = 'block';
+                } else {
+                    document.getElementById('final').style.display = 'block';
+                }
+            } else {
+                alert('A Ordem rejeita sua resposta. Tente novamente.');
+            }
+        }
+    </script>
+</body>
+  </html>
